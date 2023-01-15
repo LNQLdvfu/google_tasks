@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:id="@+id/mainCoordinatorLayout"
+        tools:context=".ui.activity.MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent"
+                                                         android:theme="@style/AppTheme.AppBarOverlay"
+                                                         android:layout_height="wrap_content"
+                                                         app:elevation="0dp"
+        >
+            <androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+                                               android:id="@+id/toolbar"
+                                               android:visibility="visible"
+
+                                               android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollable_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomBar"
+            android:background="@color/colorBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:navigationIcon="@drawable/ic_menu"/>
+
+    <View
+            android:layout_gravity="top"
+            android:id="@+id/bottom_app_bar_shadow"
+            android:background="@drawable/bottom_app_bar_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            app:layout_anchor="@id/bottomBar"
+            app:layout_anchorGravity="top" />
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:visibility="gone"
+            android:id="@+id/frameTest"
+    >
+        <TextView
+                android:text="TEST"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:fitsSystemWindows="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+
+    </FrameLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

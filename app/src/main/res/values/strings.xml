@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">GoogleTasks</string>
+    <string name="default_task_list_name">My Tasks</string>
+    <string name="create_list">Create new list</string>
+    <string name="send_feedback">Send feedback</string>
+    <string name="tasks_list">Tasks List</string>
+
+    <string name="bullet_separator">•</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="not_implemented">Not implemented</string>
+
+    <string name="list_title_hint">Enter list title</string>
+
+    <string name="done">Done</string>
+    <string name="list_edit_title">Rename list</string>
+    <string name="list_add_title">Create new list</string>
+    <string name="more_options">More options</string>
+
+    <string name="task_order_menu_title">Sort by</string>
+    <string name="sort_by_date">Sort by date</string>
+    <string name="sort_by_my_order">Sort by my order</string>
+    <string name="edit_list">Rename list</string>
+    <string name="delete_list">Delete list</string>
+    <string name="delete_all_completed_tasks">Delete all completed tasks</string>
+    <string name="task_order_menu_my_order">My order</string>
+    <string name="task_order_menu_by_due_date">Date</string>
+
+    <string name="operation_task_list_deleted">Task list deleted</string>
+    <string name="undo">Undo</string>
+
+</resources>
